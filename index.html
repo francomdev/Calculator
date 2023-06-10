@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="screen">
+                <p>0</p>
+            </div>
+        <div class="buttons">
+            <div class="buttons-row">
+                <button type = "button" class="first-row clearall">AC</button>
+                <button type = "button" class="first-row" onclick="plMn()">&PlusMinus;</button>
+                <button type = "button" class="first-row" onclick="modulo()">%</button>
+                <button type = "button" class="operation" onclick="divide()">&divide;</button>
+            </div>
+            <div class="buttons-row">
+                <button type = "button" class="number" onclick="typeNum(this)">7</button>
+                <button type = "button" class="number" onclick="typeNum(this)">8</button>
+                <button type = "button" class="number" onclick="typeNum(this)">9</button>
+                <button type = "button" class="operation" onclick="prod()">&times;</button>
+            </div>
+            <div class="buttons-row">
+                <button type = "button" class="number" onclick="typeNum(this)">4</button>
+                <button type = "button" class="number" onclick="typeNum(this)">5</button>
+                <button type = "button" class="number" onclick="typeNum(this)">6</button>
+                <button type = "button" class="operation" onclick="minus()">&minus;</button>
+            </div>
+            <div class="buttons-row">
+                <button type = "button" class="number" onclick="typeNum(this)">1</button>
+                <button type = "button" class="number" onclick="typeNum(this)">2</button>
+                <button type = "button" class="number" onclick="typeNum(this)">3</button>
+                <button type = "button" class="operation" onclick="plus()">&plus;</button>
+            </div>
+            <div class="buttons-row">
+                <button type = "button" class="number zero" onclick="typeNum(this)">0</button>
+                <button type = "button" class="number" onclick="decimalPoint()">,</button>
+                <button type = "button" class="operation" onclick="equals()">&equals;</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
